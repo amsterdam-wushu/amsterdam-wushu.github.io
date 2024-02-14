@@ -1,0 +1,163 @@
+/* Style sheet Wushu Amsterdam
+
+Timo leemans
+Quinten Madari
+Daphne Laura Schipper
+
+Images by Amber Rijcken
+
+ */
+
+.first_box{
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  color: red;
+  padding-bottom: 20px;
+  padding-top: 35px;
+}
+
+/* Images main page */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body_images{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parentBlock{
+  display: flex;
+  gap: 30px;
+}
+
+.block{
+  position: relative;
+}
+
+.block img{
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.block img:nth-of-type(2){
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.block img:nth-of-type(2):hover{
+  opacity: 1;
+}
+
+.welcome {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 3 subjects style sheet */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#general {
+  /* margin-top: 100px; */
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #D43D1A;
+}
+
+#styles {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #8B0000;
+}
+
+#contact {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #FFB00F;
+}
+
+.item {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* optional for header 2 and normal p text */
+
+h2 {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  background-image:
+}
+
+p {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* boxes next to each other */
+
+.info_field {
+  display: inline-block;
+  width: 70%;
+  height: 70vh;
+  background-color: #fffdf2;
+}
+
+#move_up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#move_up:hover {
+  background-color: #555;
+}
+
+/* wushu styles */
+
+.frame {
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  display: inline-block;
+  width: 20%;
+}
+
+.hideDivs{
+  display : none;
+  position: relative;
+  width: 80%;
+  height: 300px;
+  border: 3px solid #FF8C00;
+  background-color: #E04006;
+  color: white;
+  left: 10%;
+  top: 5%;
+}

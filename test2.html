@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body_images{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parentBlock{
+  display: flex;
+  gap: 30px;
+}
+
+.block{
+  position: relative;
+}
+
+.block img{
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.block img:nth-of-type(2){
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.block img:nth-of-type(2):hover{
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="title" id="title_page">Wushu Amsterdam - Modern Style</h1>
+
+<div class="body_images">
+  <div class="parentBlock">
+    <div class="block">
+      <a href="#general">
+        <img
+          src="img/wushu_start.jpeg"
+          alt="image1"
+        />
+        <img
+          src="img/wushu_gif.gif"
+          alt="image2"
+        />
+      </a>
+    </div>
+    <div class="block">
+      <a href="#styles">
+        <img
+          src="img/wushu_start.jpeg"
+          alt="image3"
+        />
+        <img
+          src="img/wushu_gif.gif"
+          alt="image4"
+        />
+      </a>
+    </div>
+    <div class="block">
+      <a href="#about">
+        <img
+          src="img/wushu_start.jpeg"
+          alt="image5"
+        />
+        <img
+          src="img/wushu_gif.gif"
+          alt="image6"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="welcome">
+  <h2>Welcome</h2>
+  <p> We are practitioners of the martial arts "Wushu" (which translates itself to martial (武; wǔ) and arts (術, shù)). We practice various styles and forms, though mostly focussing on more modern styles. Feel free to join us at our trainings!
+  </p>
+</div>
+
+<div class="item_box">
+  <div class="item" id="general">
+    <a href="#title_page">up</a>
+  </div>
+  <div class="item" id="styles">
+    <a href="#title_page">up</a>
+  </div>
+  <div class="item" id="about">
+    <a href="#title_page">up</a>
+  </div>
+</div>
+
+</body>
+</html>
