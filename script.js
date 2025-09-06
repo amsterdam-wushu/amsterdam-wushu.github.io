@@ -42,3 +42,10 @@ function changeLanguage() {
 
   console.log("Selected Language: " + selectedLanguage);
 }
+
+const notice = document.getElementById("fullscreen-notice");
+
+// Hide the overlay when clicked
+notice.addEventListener("click", () => {
+  notice.style.display = "none";
+});
